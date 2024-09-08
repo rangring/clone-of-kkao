@@ -1,0 +1,190 @@
+ <!DOCTYPE html>
+<html lang="kr">
+  <head>
+      <title>Friend - Kkoa Clone</title>
+      <style>
+          html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input:focus{
+    outline: none;
+}
+      </style>
+      <style>
+        /*<link rel="stylesheet" href="https://www.onlinegdb.com/edit/V9U5o3Jgc#editor_2" />*/
+        
+        body{
+            background-color: white;
+            /*background-color: rgb(214,230,245);*/
+            /*background-color: rgb(181,214,146);*/
+            font-family: "Open Sans", system-ui;
+            color: inherit;
+            height: 500vh;
+        }
+        .status-bar{
+              display: flex;
+              justify-content: center;
+              padding:0px 3px;
+          }
+        .status-bar__column{
+              width: 33%;
+          }
+        .status-bar__column:first-child span{
+              margin-right: 5px;
+          }
+        .status-bar__column:nth-child(2) {
+              display:flex;
+              justify-content: center;
+          }
+        .status-bar__column:last-child {
+              display:flex;
+              justify-content: flex-end;
+              align-items: center;
+          }
+        .status-bar__column .fa-battery-full{
+              margin:0px 4px;
+          }
+        
+        .nav{
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f9f9fa;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            border-top: 1px solid rgba(121, 121, 121, 0.3);
+        }
+        .nav__list{
+            display:flex;
+            justify-content: space-between;
+        }
+        .nav__link{
+            position: relative;
+            text-decoration: none;
+            color:#2e363e;
+        }
+        .nav__notification{
+            background-color: tomato;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            border-radius: 13px;
+            /*width의 절반수치 - 원형박스*/
+            justify-content: center;
+            align-items: center;
+            text-
+            color: white;
+            font-weight: 600;
+            position: absolute;
+            left: 15px;
+            bottom: 14px;
+        }
+        .nav__dotsnoti{
+            height: 6px;
+            width: 6px;
+            border-radius: 5px;
+            background-color: tomato;
+            margin: 5px;
+            left: 23px;
+            bottom: 23px;
+            position:absolute;
+            
+        }
+        
+        .screen-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px;
+        }
+        .screen-header__title{
+            font-size: 32px;
+            font-weight: 600;
+        }
+        .screen-header__icons span{
+            margin-left: 25px;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <!-- To Do: Wifi Icon -->
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <!-- Battery Icon -->
+        <i class="fas fa-battery-full"></i>
+        <!-- Lightning Icon -->
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-music fa-lg"></i></span>
+            <span><i class="fa-solid fa-gear fa-lg"></i></span>
+        </div>
+    </header>
+    
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn"><a class="nav__link" href="friens.html"><i class="fa-solid fa-user fa-lg"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><span class="nav__notification">1</span><i class="fa-regular fa-comment fa-lg"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><span class="nav__dotsnoti"> </span><i class="fa-solid fa-ellipsis fa-lg"></i></a></li>
+        </ul>
+    </nav>
+    
+    
+    
+    <script src="https://kit.fontawesome.com/c647e30d60.js" crossorigin="anonymous"></script>
+  </body>
+</html>
